@@ -64,13 +64,13 @@ func parseFlags() {
 
 	flag.StringVar(&config.configFile, "configFile", "config", "Configuration file for general parameters")
 	flag.BoolVar(&config.headers, "headers", true, "Output Headers")
-	flag.StringVar(&config.exportObject, "export", "", "Table(s), View(s) or querys to export")
-	flag.StringVar(&config.exportObject, "e", "", "Table(s), View(s) or querys to export")
+	flag.StringVar(&config.exportObject, "export", "", "Table(s), View(s) or queries to export")
+	flag.StringVar(&config.exportObject, "e", "", "Table(s), View(s) or queries to export")
 	flag.StringVar(&config.outputFilename, "output", "output.xlsx", "Output Filename")
 	flag.StringVar(&config.outputFilename, "o", "output.xlsx", "Output Filename")
 
 	flag.BoolVar(&config.debugMode, "debug", false, "Debug mode (default=false)")
-	flag.StringVar(&config.connectionConfig, "connection", "", "Confguration file for connection")
+	flag.StringVar(&config.connectionConfig, "connection", "", "Configuration file for connection")
 
 	flag.StringVar(&connection.dbConnectionString, "db", "", "Database Connection, e.g. user/password@host:port/sid")
 
